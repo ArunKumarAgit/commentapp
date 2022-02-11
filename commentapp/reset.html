@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Reset Password</title>
+    <style>
+        body {
+            background-color: rgb(241, 247, 243);
+            padding: 2.2cm;
+        }
+
+        #h1 {
+            text-align: center;
+            padding: 1.1cm;
+        }
+
+        #secret {
+            width: 50%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: groove;
+            background: #f1f1f1;
+            border-radius: 4px;
+
+        }
+
+        #signin {
+            background-color: #0451a9a6;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 52.5%;
+            opacity: 0.9;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <form action="/reset" method="POST">
+            <h2 id="h1">Reset Password</h2>
+            <label>Email</br></label>
+            <input type="email" id="secret" placeholder="Enter Email" name="email" required><br>
+            <label>Secret</br></label>
+            <input type="number" id="secret" placeholder="Secret code" name="number" required pattern="[0-9]{5}">
+            <br>
+            <button type="submit" id="signin">Sign In</button>
+        </form>
+    </div>
+</body>
+
+</html>

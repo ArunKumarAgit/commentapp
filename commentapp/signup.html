@@ -1,0 +1,67 @@
+
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-color: rgb(241, 247, 243);
+            padding: 1.2cm;
+        }
+
+        #h1 {
+            padding: 1.0cm;
+        }
+
+        #p1 {
+            padding: 1.5cm;
+        }
+
+        #input {
+            width: 50%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: groove;
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        #SignUp {
+            background-color: #0451a9a6;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 52.5%;
+            opacity: 0.9;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <form action="/sign_up" method="POST">
+            <h2 id="h1">Sign Up</h2>
+            <p id="p1">Already have account? <a href="signin.html"
+                    style="color: #0451a9a6; text-decoration: none;">&nbsp;Sign In</a></p>
+            <label>Email</br></label>
+            <input type="email" placeholder="Enter Email" name="email" id="input" required pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"/><!--regex-->
+            <br>
+            <label>Password</br></label>
+            <input type="password" placeholder="Password" name="password" id="input" required/>
+            <br>
+            <label>Secret</br></label>
+            <input type="number" id="input" placeholder="Secret code" name="number" required pattern="[0-9]{5}"><!--regex-->
+            <br>
+            <button type="submit" id="SignUp">Sign Up</button>
+            <p>By clicking the "Sign Up" button, you are creating an
+                <br>account, and you agree to the Terms of Use.
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

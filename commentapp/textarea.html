@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TextArea</title>
+    <style>
+        body {
+            background-color: rgb(241, 247, 243);
+            padding: 1cm;
+        }
+
+        #text1 {
+            resize: none;
+            border-color: #0451a9a6;
+            border-width: 1.3pt;
+        }
+
+        #button {
+            background-color: white;
+            padding: 16px 20px;
+            cursor: pointer;
+            opacity: 0.9;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<div>
+    <form action="textarea" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <label>What would you like to share with world?</label>
+                    <br>
+                    <br>
+                    <textarea name="comment" id="text1" cols="60" rows="12" required placeholder="Comment here"></textarea>
+                </td>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="submit" value="Submit" id="button">
+                </td>
+            </tr>
+        </table>
+
+    <div>
+        <br>
+    <canvas id="myCanvas" width="500" height="500"
+        style="border:2px solid #000000;">
+        comments
+    </canvas>
+    </div>
+    </form>
+</div>
+</body>
+
+</html>
