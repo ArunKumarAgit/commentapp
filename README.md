@@ -10,6 +10,7 @@ how to run the app
         d)nodejs -> Runtime Environment
         e)VS CODE -> IDE
         f)postman(optional) to test GET AND POST request
+        h)Operating system - Windows
         
 2-Packages to be installed and terminal commands to intstall packages
 -------------------------------------------------------------------
