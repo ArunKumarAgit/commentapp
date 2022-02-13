@@ -11,7 +11,7 @@ how to run the app
         e)VS CODE -> IDE
         f)postman(optional) to test GET AND POST request
         
-2-Packages to be installed and commands
+2-Packages to be installed and terminal commands to intstall packages
 -------------------------------------------------------------------
         a)npm init -> to get json package
         b)npm install express
