@@ -1,5 +1,5 @@
                       comment(full stack appplication)
-A-how to run the app
+how to run the app
 --------------------
 ------------------------------------------------------------------
 1-required softwares--
