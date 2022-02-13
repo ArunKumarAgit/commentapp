@@ -59,25 +59,6 @@ app.post("/sign_in", (req, res) => {
     return res.redirect('textarea.html')
 
 })
-app.post("/reset", (req, res) => {
-    var email = req.body.email;
-    var number = req.body.number;
-
-    var data = {
-        "email": email,
-        "number": number
-    }
-
-    db.collection('users').insertOne(data, (err, collection) => {
-        if (err) {
-            throw err;
-        }
-        console.log("Record Inserted Successfully");
-    });
-
-    return res.redirect('textarea.html')
-
-})
 
 app.post("/textarea", (req, res) => {
     var email = req.body.email;
@@ -157,7 +138,6 @@ app.get("/textarea",async (req,res)=>{
         return res.json(collection);
 
     } catch(e) {
-
         return res.json({});
 
     }
