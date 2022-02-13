@@ -30,7 +30,6 @@ app.post("/sign_up", (req, res) => {
         "password": password,
         "number": number
     }
-
     db.collection('users').insertOne(data, (err, collection) => {
         if (err) {
             throw err;
